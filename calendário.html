@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f3efed; 
+        }
+
+        .wrapper {
+            max-width: 760px;
+            margin: 10px auto;
+            background-color: #d94c35;
+            padding: 20px;
+            display: flex;
+            border-radius: 8px;
+            flex-wrap: wrap;
+        }
+
+        .days-week {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .number-days {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .days-week span {
+            color: #d94c35;
+            display: inline-block;
+            font-weight: bold;
+            width: 14.2%;
+        }
+
+        .number-days span {
+            color: #7f3232;
+            display: inline-block;
+            width: 14.2%;
+            margin: 8px 0;
+        }
+
+        .mes-anterior {
+            opacity: 0.5;
+        }
+
+        .day-selected {
+            text-decoration: underline;
+        }
+
+        .mes{
+            color: #000000;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+    <div class="mes">
+        <h1>
+            Novembro
+        </h1>
+    </div>
+</center>
+    <div class="wrapper">
+        <div class="days-week">
+            <span style="color: #fffede;">Segunda</span>
+            <span style="color: #fffede;">Terça</span>
+            <span style="color: #fffede;">Quarta</span>
+            <span style="color: #fffede;">Quinta</span>
+            <span style="color: #fffede;">Sexta</span>
+            <span style="color: #fffede;">Sábado</span>
+            <span style="color:#fffede;">Domingo</span>
+        </div>
+
+        <div class="number-days">
+            <span class="mes-anterior">30</span>
+            <span class="mes-anterior">31</span>
+        </div>
+    </div>
+
+    <script>
+        let el = document.querySelector('.number-days');
+        for (let i = 1; i <= 31; i++) { 
+            if (i == 2)  {
+                el.innerHTML += '<span class="day-selected">' + i + '</span>';
+            } else {
+                el.innerHTML += '<span>' + i + '</span>';
+            }
+        }
+    </script>
+</body>
+</html>

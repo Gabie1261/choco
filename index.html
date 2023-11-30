@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+        }
+
+        .video-container {
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .text-overlay h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .text-overlay p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            position: relative;
+            z-index: 1;
+        }
+
+        p {
+            position: relative;
+            z-index: 1;
+        }
+
+
+        .cta-button {
+            display: inline-block;
+            background-color: #d94c35;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e64d3b;
+        }
+
+        .popular-products {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .product {
+            display: inline-block;
+            width: 320px;
+            margin: 0 20px;
+        }
+
+        .product img {
+            height: 150px;
+            width: 250px;
+            max-width: 100%;
+            border: 2px solid #d94c35;
+            border-radius: 5px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #d94c35;
+        }
+
+        .company-info {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+
+        footer {
+            background-color: #f2b8a3;
+            text-align: center;
+            padding: 10px 0;
+            color: #fff;
+        }
+        @media (max-width: 600px) {
+.popular-products{}
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="videoheader.mp4" type="video/mp4">
+            </video>
+            <div class="text-overlay">
+                <h1>Bem-vindo à ChocoDelights</h1>
+                <p>Descubra o sabor irresistível do chocolate</p>
+                <a href="catalogo.php" class="cta-button">Explore Nossos Chocolates</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="popular-products">
+        <div>
+            <h2>Produtos em Destaque</h2>
+        </div>
+
+        <div class="product">
+            <img src="imagem/bombom.jpg" alt="Chocolate Ao Leite">
+            <h3>Chocolate Ao Leite</h3>
+            <p>Uma deliciosa caixa com 4 unidades com chocolate ao leite com uma textura cremosa.</p>
+            <span class="price">R$ 12,99</span>
+        </div>
+
+        <div class="product">
+            <img src="imagem/chocolate.jpg" alt="Trufa de Chocolate">
+            <h3>Trufa de Chocolate</h3>
+            <p>Uma trufa irresistível com recheio de chocolate cremoso.</p>
+            <span class="price">R$ 5,99</span>
+        </div>
+
+        <div class="product">
+            <img src="imagem/1.jpg" alt="Chocolate Ao Leite">
+            <h3>Cake pop ao leite</h3>
+            <p>Perfeito bolo no palito, coberto com chocolate ao leite com uma textura cremosa.</p>
+            <span class="price">R$ 4,99</span>
+        </div>
+
+        <br><br><br><br><br><br>
+
+        <div class="product">
+            <img src="imagem/2.jpg" alt="Chocolate Ao Leite">
+            <h3>Chocolate Quente</h3>
+            <p>Uma caneca de 700ml com o chocolate mais cremoso.</p>
+            <span class="price">R$ 17,99</span>
+        </div>
+
+        <div class="product">
+            <img src="imagem/3.jpg" alt="Chocolate Ao Leite">
+            <h3>Cupcake</h3>
+            <p>Um bolinho encantador,com o melhor recheio de doce de leite.</p>
+            <span class="price">R$ 10,99</span>
+        </div>
+
+        <div class="product">
+            <img src="imagem/5.jpg" alt="Chocolate Ao Leite">
+            <h3>Milk-shake</h3>
+            <p>Uma taça de 700ml da melhor bebida do mundo.</p>
+            <span class="price">R$ 19,99</span>
+        </div>
+    </section>
+
+    <section class="company-info">
+        <h2>Nossa História</h2>
+        <p>A ChocoDelights é apaixonada por criar os chocolates mais saborosos e requintados. Nossa jornada começou há
+            mais de uma década, e desde então temos sido dedicados à qualidade, inovação e alegria do chocolate.</p>
+    </section>
+
+    <footer>
+        <p>Maresias, São Sebastião - SP, 11600-000</p>
+        <p>(12)99123-4777</p>
+        <p>alunoss973@gmail.com</p>
+        <p>&copy; 2023 ChocoDelights</p>
+    </footer>
+</body>
+
+</html>
